@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+        <form action="/tacos">
+            <p>
+                <label>enter a username:</label>
+                <input type="text" placeholder="username" name="username">
+           </p>
+           
+           <label>enter a password:</label>
+            <input type="password" id="password" name="password" >
+            <input type="color"name="color">
+            <input type="number" min="0" max="10">
+            <input type="time"> <br>
+        
+        <button> click me</button>
+        <input type="submit" value="click meee">
+    </form>
+    <form action="https://www.google.com/search">
+        <!--Buscar en google o cualquier link-->
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <!--Buscar en google o cualquier link-->
+        <input type="text" name="q">
+        <button>Search Youtube</button>
+    </form>
+    
+    <h2>More inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_resp" id="agree">
+        <label fpr="agree">I agree to</label>
+
+        <p>
+        <!--name sirve para cuando se mande aparezca name==on -->
+         <!--id sirve para ponerle un nombre en label -->
+          <!-- value sirve para que aparezca en cuando se le da sumbit name==xs -->
+            <input type="radio" name ="size" id="xs" value="xs">
+            <label for="xs">XS:</label>
+            <input type="radio" name ="size" id="m" value="m">
+            <label for="m">M:</label>
+            <input type="radio" name ="size" id="g" value="g">
+            <label for="g">G:</label><br>  
+        </p>
+        <p>
+          <label for="meal">Please select an enter</label>
+            <select name="meal" id="meal">
+            <option value="fish">Fish</option>
+            <option value="steak">Steak</option>
+        </select>
+        </p>
+        <p>
+            <label for="cheese">Amout of cheese:</label> 
+            <input type="range" min="1" max="10" name="cheese_level"> 
+        </p>
+        <p>
+            <label>Special Request</label><br>
+            <textarea id="request" rows="10" cols="40" name="request"> </textarea>
+
+        </p>
+        <button>submit</button>
+    </form>
+
+    <h2>Validation Demo</h2>
+    <form action="/">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required><br>
+        <label for="first">UserName</label>
+        <input type="text" name="user" id="user" required minlength="5" maxlength="10"><br>
+        <button>submit</button>
+
+    </form>
+</body>
+</html>
