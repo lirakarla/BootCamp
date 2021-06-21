@@ -1,0 +1,23 @@
+*{
+    background-color: #e6e1dc;
+}
+
+h1,h2{
+    color:#81968F;
+}
+
+p{
+    color:#b997be;
+}
+
+a{
+    color:#96BDC6;
+}
+
+button{
+   background-color:rgba(97, 5, 45, 0.767);
+}
+
+#another{
+    background-color: antiquewhite;
+}
