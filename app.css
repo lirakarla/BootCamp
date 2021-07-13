@@ -1,0 +1,61 @@
+*{
+    background-color: #e6e1dc;
+}
+
+h1,h2{
+    color:#81968F;
+}
+
+p{
+    color:#b997be;
+}
+
+a{
+    color:#96BDC6;
+}
+
+button{
+   background-color:rgba(97, 5, 45, 0.767);
+}
+
+/* es un id */
+#another{
+    background-color: antiquewhite;
+}
+
+a{
+    color:#96BDC6;
+}
+
+span a{
+    background-color: rgb(199, 196, 53);
+    
+}
+
+h2 + button{
+    background-color: crimson;
+}
+
+
+body > a{
+    color:darkgoldenrod;
+}
+
+input[type="password"]{
+    color:darkred;
+}
+
+button:hover{
+    background-color: lightpink;
+    color:black;
+    font-size: 10px;
+}
+
+button:active{
+background-color: rgba(126, 250, 126, 0.623);
+}
+
+p::selection{
+    background-color: gold;
+}
+
