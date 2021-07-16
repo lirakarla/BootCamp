@@ -1,4 +1,4 @@
-section{
+#rgbaVSopa{
     width: 500px;
     height: 500px;
     background-color: coral;
@@ -14,4 +14,43 @@ section{
     height: 50%;
     background-color: palegreen;
     opacity: 0.4;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: darkslategray;
+    border:2px solid black;
+    margin: 10px;
+    display: inline-block;  
+}
+
+#middle{
+    background-color: cornflowerblue;
+}
+
+#static #middle{
+    position: static;
+    top:100px;
+}
+
+#relative #middle{
+    position: relative;
+    top:50px;
+}
+
+#absolute #middle{
+    position: absolute;
+    top:5px;  
+    left:10px; 
+}
+
+#absolute{
+    position: relative;
+}
+
+#fixed #middle{
+    position: fixed;
+    top:0px;
+    left:400px
 }
