@@ -27,5 +27,15 @@ div{
 
 section{
     width: 800px;
-    height: 800pxbackground-color: darkgoldenro;
+    height: 800px;
+    background-color: darkgoldenrod;
+}
+
+button{
+    /* si se hace con px hay un punto en donde ya se ve el boton redondo*/
+ font-size: 1em;
+ padding: 0px 1em;
+ border-radius: 0.5em;
+ background-color: darkcyan;
+ color: aliceblue;
 }
