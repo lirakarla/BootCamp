@@ -1,0 +1,19 @@
+section{
+    width: 80%;
+    height: 800px;
+    /*MANERA 1 DE AJUSTAR UNA IMAGEN
+    background-image:  url("https://images.unsplash.com/photo-1626322751456-777779e0c4ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+    background-size: cover;
+    background-position: bottom;
+    */
+    /*MANERA DOS*/
+    background: center/80% no-repeat url("https://images.unsplash.com/photo-1626322751456-777779e0c4ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"), pink;
+
+
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 100px;
+    color:white;
+}
