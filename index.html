@@ -1,39 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS formulario</title>
-    <link rel="stylesheet" href="app.css">
+    <title>Mi pagina</title>
 </head>
+<style> 
+    table, th, tr {
+        border: 1px salmon solid;
+        border-collapse: collapse;
+
+    }
+    div {
+   background-color: silver;
+   margin: 70px;
+   padding: 50px;
+   border-color: tomato;
+   border-style: solid;
+   border-width: 100px;
+   border-radius: 10px;
 
 
-<main>
-    <h1>Popular posts</h1>
-    <hr>
-    <p>Posted by <a href=www.soyKarla.com>Karla</a></p>
-    <h2>Lol Look at this hilarious meme funny</h2>
-    <button>I AM BUTTON</button>
-    <button id="another">another button:)</button>
-    <span class="primer tag">
-        <hr>
-    </span>
-</main>
+    }
+</style>
+
 
 <body>
-    <a href=lience.com>lience</a>
-    <p>Posted by <a href=www.soyKarla.com>Karla</a></p>
-    <h2>Lol Look at this hilarious meme funny</h2>
-    <button>I AM BUTTON</button>
-    <button id="another">another button:)</button>
-    <input type="password" placeholder="insert your pass">
-    <span class="primer tag">
-        <hr>
-        <h2>Bienvenidos</h2>
-    </span>
+    <nav>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+
+<script>
+   
+   //valida datos
+    const emm=() =>{
+     console.log("enviar form");
+     let cont=0;
+    
+     const fname= document.getElementById("fname").value;
+     console.log(fname.length);
+     
+     if(fname.length >=3){
+         console.log("Si se puede")
+     } else{
+         alert("escribe mas lestras")
+     }
+     console.log(document.getElementById("vehicle1").checked)
+     if (true===document.getElementById("vehicle1").checked){
+         cont++;
+        }
+    if (true===document.getElementById("vehicle2").checked){
+         cont++;
+    }
+    if (true===document.getElementById("vehicle3").checked){
+         cont++;
+         
+        }
+    
+    if(cont>=2){
+       console.log("si se puede");
+       const vehiculos=(document.querySelectorAll('input[name=vehicle]:checked'))
+       
+      const filtrados= [];
+      
+       for (let index = 0; index < vehiculos.length; index++) {
+           console.log(vehiculos[index].value);
+           filtrados.push(vehiculos[index].value) 
+       }
+     console.log(filtrados)
+      
+     console.log(fname);
+
+     const lname= document.getElementById("lname").value;
+     console.log(lname);
+       
+    }
+    
+    else{
+        alert("te falta de llenar un campoooo")
+    }
+}
+ </script> 
+<form onSubmit=" emm(); return false">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" minlength="3" required><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" required><br>
+
+    <input type="checkbox" id="vehicle1" name="vehicle" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br>
+    <input type="submit" value="Submit">
+</form>
+<!-- el section es como un div pero para dividir una seccion-->
+<sectio>
+    <p>
+    Escribo <br>
+    por<br>
+     partes<br>
+     ahora pondre un indice ...<sup><a href="hola.com">[1]</a></sup><br>
+     H<sub>2</sub>O
+    </p>
+</sectio>  
+
+    Para usar simbolos especificos entrar a <a href=https://dev.w3.org/html5/html-author/charref >https://dev.w3.org/html5/html-author/charref</a>
+
+    Por ejemplo:<br>
+    &ast;
+    &plus;
+    &lt;
+
+    <h1 id="titulo1">Mi titulo</h1>
+    <h2>Mi titulo</h2>
+    <h3>Mi titulo</h3> 
+    <h4>Mi titulo</h4>
+    <h5>Mi titulo</h5>
+    <p>hola
+        <br>
+        <b>karla</b>
+        <i>lira</i>
+        <u>rangel</u>  
+    </p>
+
+
+
+<div>
+    <p style="display: inline-block;">
+        hola
+    </p>
+    <h1 style="display: inline-block;">Hi</h1>
+</div>
+
+
+
+
+    <table border="1" >
+        <tr>
+            <th>
+                precio
+            </th>
+            <th>
+                articulo
+            </th>
+        </tr>
+        <tr>
+            <td>
+                500
+            </td>
+            <td>
+                manzana
+            </td>
+        </tr>
+        <tr>
+            <td>
+                300
+            </td>
+            <td>
+                durazno
+            </td>
+        </tr>
+    </table>
+
+    <ul>
+        <li>
+            lasagna
+            <ol>
+                <li>
+                    lasa
+                </li>
+            </ol>
+        </li>
+        <li>
+            sushi takis
+        </li>
+        <li>
+            fresas
+        </li>
+    </ul>
+<img  id="imagen" src="https://elpais.com/elpais/imagenes/2016/09/30/videos/1475233939_293925_1475234315_noticia_fotograma.jpg"/> 
+
+<button>presioname</button>
+<input type="button" value="texto"/> 
+<input type= "datetime-local" />
+<input type= "text" />
+<input type= "number" />
+<input type= "file" />
+<textarea> </textarea>
+
+<a href="google.com">ir a google</a>
+
+<select>  
+    <option selected disabled>
+        selecciona una opcion
+  </option> 
+     <option>
+            monterrey
+      </option> 
+      <option > 
+       torreon
+  </option> 
+</select>
+
+<script src="index.js"></script> 
+
 </body>
-
-
-
 </html>

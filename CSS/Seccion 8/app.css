@@ -1,0 +1,40 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 219, 205);
+}
+
+body{
+    margin: 0px;
+}
+
+h1{
+    background-color: chocolate;
+    padding-top: 50px;
+    padding-left: 100px;
+    margin: 0%;
+}
+
+#one{
+
+}
+
+#two{
+    background-color:rgb(231, 227, 182);
+    border-color: burlywood;
+    border-style: dashed;
+    border-width: 3px;
+    margin-left: 10px;
+}
+
+#three{
+background-color:rgb(194, 179, 173);
+border:4px solid;
+border-left-style: dashed;
+}
+
+button{
+    margin-top: 20px;
+    /*  vertical | horizontal*/
+    padding: 0px 20px;
+}
