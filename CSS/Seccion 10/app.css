@@ -1,0 +1,22 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-align: center;
+}
+#container{
+    background-color: dimgray;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display:flex;
+    /*se puede justificar(acomodar horizontal o vertical, depende de "flex-direction:row ó col")*/
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    
+}
+#container div{
+    width: 200px;
+    height: 200px;
+}
