@@ -4,30 +4,65 @@ body{
 h1{
     text-align: center;
 }
+h2{
+    text-align: center;
+}
 #container{
     background-color: dimgray;
     width: 90%;
-    height: 500px;
+   /* height: 500px;*/
     margin: 0 auto;
     border: 5px solid #003049;
     display:flex;
     /*se puede justificar(acomodar horizontal o vertical, depende de "flex-direction:row ó col")*/
     justify-content: center;
-    flex-direction: column; /*puede ser row ó colum*/
-    flex-wrap: wrap;
-    align-items: flex-start;
+    flex-direction: row; /*puede ser row ó colum*/
+    /*flex-wrap: wrap;*/
+    /*align-items: flex-start;*/
     
 }
 #container div{
     width: 200px;
-    height: 150px;
+    height: 200px;
+    /*max-width: 300px;*/
     text-align: center;
+    flex-basis:600px;
+   /* flex-grow: 1;*/
   
 }
+/*se comen el espacio sobrante entre los dos*/
+div:nth-of-type(1){
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+div:nth-of-type(5){
+    flex-grow: 1;
+}
 
+
+/*Solo se mueven los elementos seleccionados mas abajo o arriba
 div:nth-of-type(3){
     align-self:center;
 }
 div:nth-of-type(2){
     align-self:flex-end;
+}
+*/
+main{
+    width: 80%;
+    margin:0 auto;
+    border: 5px solid black;
+    height: 500px ;
+    display: flex;
+}
+main .sidebar{
+    background-color: blueviolet;
+    /* Dos valores: flex-grow | flex-basis(cuando tiene px) */
+    /* Tres valores: flex-grow | flex-shrink | flex-basis */
+    flex:1 2 300px;
+}
+main .maincontent{
+    background-color: blue;
+    /*flex-shrink: es para cuando se hace responsivo hacer mas peque ese elemento*/
+    flex:2 1 800px;
 }
