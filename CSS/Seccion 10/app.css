@@ -12,11 +12,22 @@ h1{
     border: 5px solid #003049;
     display:flex;
     /*se puede justificar(acomodar horizontal o vertical, depende de "flex-direction:row ó col")*/
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column; /*puede ser row ó colum*/
+    flex-wrap: wrap;
+    align-items: flex-start;
     
 }
 #container div{
     width: 200px;
-    height: 200px;
+    height: 150px;
+    text-align: center;
+  
+}
+
+div:nth-of-type(3){
+    align-self:center;
+}
+div:nth-of-type(2){
+    align-self:flex-end;
 }
