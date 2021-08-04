@@ -1,1 +1,1 @@
-Sección 12-bootstrap
+Sección 
