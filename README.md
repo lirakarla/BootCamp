@@ -1,1 +1,1 @@
-Sección java
+Sección javascript
